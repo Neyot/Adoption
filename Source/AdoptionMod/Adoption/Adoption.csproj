@@ -54,7 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adoption.cs" />
-    <Compile Include="Order_Adopt.cs" />
+    <Compile Include="Order_AdoptChild.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
