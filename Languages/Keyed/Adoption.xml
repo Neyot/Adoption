@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-  <AdoptOther>Adopt {0}</AdoptOther>
-  <CannotAdoptOther>Cannot adopt {0}</CannotAdoptOther>
+  <AdoptChild>Adopt Child</AdoptChild>
+  <CannotAdoptChild>Cannot adopt child.</CannotAdoptChild>
 </LanguageData>

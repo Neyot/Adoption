@@ -1,13 +1,11 @@
-﻿using HarmonyLib;
-using RimWorld;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using UnityEngine;
-using Verse.AI;
+using HarmonyLib;
+using RimWorld;
 using Verse;
+using Verse.AI;
 
 namespace Neyot.Adoption
 {
@@ -70,7 +68,7 @@ namespace Neyot.Adoption
                 }
 
                 // Add menu option to dress patient. User will be asked to select a target.
-                FloatMenuOption option = FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("AdoptOther".Translate(targetBody.Thing.LabelCap, targetBody.Thing), delegate () // TODO: translate not working
+                FloatMenuOption option = FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("Adopt Child", delegate () // TODO: Translate... "string".Translate()
                 {
                     pawn.jobs.TryTakeOrderedJob(new Job(DefDatabase<JobDef>.GetNamed("AdoptChild", false), targetBody));
                 }, MenuOptionPriority.High), pawn, targetBody);
