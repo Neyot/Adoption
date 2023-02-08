@@ -70,7 +70,7 @@ namespace Neyot.Adoption
                 // Add menu option to dress patient. User will be asked to select a target.
                 FloatMenuOption option = FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("Adopt Child", delegate () // TODO: Translate... "string".Translate()
                 {
-                    pawn.jobs.TryTakeOrderedJob(new Job(DefDatabase<JobDef>.GetNamed("AdoptChild", false), targetBody));
+                    pawn.jobs.TryTakeOrderedJob(new Job(DefDatabase<JobDef>.GetNamed("AdoptChild", false), targetBody, pawn));
                 }, MenuOptionPriority.High), pawn, targetBody);
                 opts.Add(option);
             }
